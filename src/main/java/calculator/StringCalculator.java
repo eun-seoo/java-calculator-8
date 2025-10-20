@@ -25,4 +25,14 @@ public class StringCalculator {
         String[] tokens = splitNumbers.split(delimiter);
         return tokens;
     }
+
+    public void validateNegative(String[] numbers){
+        for (String s : numbers){
+           int value = Integer.parseInt(s);
+           if(value < 0){
+               throw new IllegalArgumentException("음수는 입력할 수 없습니다.");
+           }
+        }
+    }
+
 }
