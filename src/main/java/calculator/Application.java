@@ -13,6 +13,7 @@ public class Application {
             outputView.output(sum);
         }catch(IllegalArgumentException e) {
             outputView.printError(e.getMessage());
+            throw e;
         }
     }
 }
