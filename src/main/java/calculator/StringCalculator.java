@@ -35,4 +35,14 @@ public class StringCalculator {
         }
     }
 
+    public int sum(String[] tokens){
+        int sum = 0;
+
+        for(String s : tokens){
+            int number = Integer.parseInt(s); //parseInt는 integer 객체의 메서드
+            sum += number;
+        }
+        return sum;
+    }
+
 }
