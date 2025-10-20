@@ -45,4 +45,10 @@ public class StringCalculator {
         return sum;
     }
 
+    public int calculator(String input){
+        if (isEmptyInput(input)) return 0;
+        String[] numbers = split(input);
+        validateNegative(numbers);
+        return sum(numbers);
+    }
 }
